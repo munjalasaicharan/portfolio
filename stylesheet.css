@@ -1,0 +1,144 @@
+#myVideo {
+    /* position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+    z-index: -1;  */
+
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+}
+
+
+#vcard {
+    background-color: black;
+    color: aliceblue;
+    margin: auto;
+    width: 30%;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    box-shadow: 0 4px 50px 0 rgba(5, 255, 34, 0.5), 4px 0px 50px 0 rgba(43, 0, 255, 0.5);
+}
+
+#myname {
+    text-align: center;
+}
+
+#icontray {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 30px;
+
+}
+
+.trayicon {
+    color: aliceblue;
+}
+
+
+/* If the browser window is 600px or smaller */
+@media only screen and (max-width: 600px) {
+    #vcard {
+        width: 18rem;
+    }
+}
+
+/* If the browser window is 600px or smaller */
+@media only screen and (min-width: 601px) {
+    #vcard {
+        width: 30%;
+    }
+}
+
+
+
+
+.mytooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+
+}
+
+
+.mytooltip .tooltiptext {
+
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    visibility: hidden;
+    animation: fadeOut 1s;
+    text-align: center;
+    border-radius: 10px;
+    padding: 5px 0;
+    width: 100px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+}
+
+
+.mytooltip:hover .tooltiptext {
+
+    animation: fadeIn 1s;
+    visibility: visible;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    100% {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+
+
+.modal-title{
+    color: rgb(0, 136, 255);
+}
+
+.modal-body{
+    color: black;
+}
+
+.modal{
+    background-color: black;
+}
+
+
+#addresslink{
+    color: blue;
+    font-size:smaller
+}
